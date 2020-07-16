@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+.gridBox {
+  display: grid;
+  grid-template-columns: 155px 155px;
+  grid-template-areas:
+    "header header"
+    "first second"
+    "third third"
+    "fourth fifth"
+    "sixth sixth"
+    "seventh seventh"
+    "eight ninth"
+    "ten elleven"
+    "footer footer";
+  grid-gap: 10px;
+}
+.gridBox__header {
+  font-family: Roboto;
+  width: 1fr;
+  height: 90px;
+  background: hsl(0, 0%, 77%);
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridBox__element {
+  display: flex;
+  width: 125px;
+  height: 125px;
+  padding: 15px;
+  align-items: flex-end;
+  font-size: 14px;
+}
+
+.gridBox__1 {
+  background: #e8ebed;
+  grid-area: first;
+}
+.gridBox__2 {
+  grid-area: second;
+  background: #e8ebed;
+}
+.gridBox__3 {
+  padding: 15px;
+  width: 1fr;
+  height: 125px;
+  grid-area: third;
+  background: #e8ebed;
+  display: flex;
+  align-items: flex-end;
+}
+.gridBox__4 {
+  grid-area: fourth;
+  background: #90bce8;
+}
+.gridBox__5 {
+  grid-area: fifth;
+  background: #febf26;
+}
+.gridBox__6 {
+  display: grid;
+  grid-area: sixth;
+  gap: 6.5px;
+
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "leftSide rightTop"
+    "leftSide rightBottom";
+}
+.gridBox_6__1 {
+  overflow-y: auto;
+  width: 181px;
+  height: 181px;
+  padding: 15px;
+  font-size: 18px;
+  grid-area: leftSide;
+  background: #a2a9b7;
+  display: flex;
+  color: white;
+}
+.gridBox_6__2 {
+  width: 72px;
+  height: 72px;
+  padding: 15px;
+  font-size: 12px;
+  grid-area: rightTop;
+  background: #a2a9b7;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+}
+.gridBox_6__3 {
+  width: 72px;
+  height: 72px;
+  font-size: 12px;
+  grid-area: rightBottom;
+  background: #a2a9b7;
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+  color: white;
+}
+.gridBox__7 {
+  padding: 15px;
+  width: 1fr;
+  height: 125px;
+  grid-area: seventh;
+  background: #ffaa87;
+  display: flex;
+  align-items: flex-end;
+}
+.gridBox__8 {
+  grid-area: eight;
+  background: #ffaa87;
+}
+.gridBox__9 {
+  grid-area: ninth;
+  background: #c7abd4;
+}
+.gridBox__10 {
+  grid-area: ten;
+  background: #ffaa87;
+}
+.gridBox__11 {
+  grid-area: elleven;
+  background: #f55e62;
+}
+
+.gridBox__footer {
+  width: 1fr;
+  height: 90px;
+  background: hsl(0, 0%, 77%);
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
